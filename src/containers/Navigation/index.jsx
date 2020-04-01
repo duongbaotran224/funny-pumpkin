@@ -52,7 +52,7 @@ export default class Navigation extends Component {
     return (
       <S.Navibar>
         <S.NavTop>
-          <S.Link as={Link} to={ROUTES.LANDING}>
+          <S.Link as={Link} to={ROUTES.ABOUT}>
             <S.Icon as={Logo} w={35} h={40} />
           </S.Link>
           <Menu />
@@ -68,11 +68,3 @@ export default class Navigation extends Component {
   }
 }
 
-// const Navigation = (props) => {
-
-//   return (
-
-//   )
-// }
-
-// export default Navigation

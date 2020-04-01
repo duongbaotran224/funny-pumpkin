@@ -4,24 +4,32 @@ import * as ROUTES from '../../../../constants/routes';
 import * as S from './styled';
 import { NavLink } from 'react-router-dom';
 
-const Burger = ({ onClick, cross }) => {
+const links = [
+  { href: ROUTES.ABOUT, title: "About" },
+  { href: ROUTES.WORKS, title: "Works" },
+  { href: ROUTES.CONTACT, title: "Contact" },
+]
+
+const Burger = ({ onClick, isOpen }) => {
   return (
-    <S.Button onClick={onClick}>
-      <S.Burger cross={cross}>
-        <S.LineTop cross={cross}></S.LineTop>
-        <S.Line cross={cross}></S.Line>
-        <S.LineBottom cross={cross}></S.LineBottom>
-      </S.Burger>
-    </S.Button>
+    <S.Burger cross={isOpen} onClick={onClick}>
+      <S.LineTop />
+      <S.Line />
+      <S.LineBottom />
+    </S.Burger>
+  )
+}
+
+const Item = ({ onClick, href, title }) => {
+  return (
+    <S.NavItem onClick={onClick} as={NavLink} to={href}>{title}</S.NavItem>
   )
 }
 
 export default class Menu extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      open: false
-    }
+    this.state = { open: false }
   }
 
   toggleMenu = () => {
@@ -31,12 +39,15 @@ export default class Menu extends Component {
   render() {
     return (
       <S.Wrapper>
-        <Burger onClick={this.toggleMenu} cross={this.state.open} />
+        <Burger onClick={this.toggleMenu} isOpen={this.state.open} />
+
         {this.state.open &&
           <S.List>
-            <S.NavItem onClick={this.toggleMenu} as={NavLink} to={ROUTES.ABOUT}>About</S.NavItem>
-            <S.NavItem onClick={this.toggleMenu} as={NavLink} to={ROUTES.WORKS}>Works</S.NavItem>
-            <S.NavItem onClick={this.toggleMenu} as={NavLink} to={ROUTES.CONTACT}>Contact</S.NavItem>
+            {
+              links.map((item) => (
+                <Item onClick={this.toggleMenu} {...item} />
+              ))
+            }
           </S.List>
         }
       </S.Wrapper>

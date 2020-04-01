@@ -26,6 +26,7 @@ export const StyledGlobal = createGlobalStyle`
 
 
   a, button {
+    background-color: transparent;
     pointer-events: all;
     cursor: pointer;
   }

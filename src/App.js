@@ -39,7 +39,7 @@ export default class App extends Component {
           <StyledGlobal />
           <ScrollTopRouter />
           <Switch >
-            <Route path={ROUTES.ABOUT} render={props => <About />} />
+            <Route exact path={ROUTES.ABOUT} render={props => <About />} />
             <Route path={ROUTES.WORKS} render={props => <Works />} />
             <Route path={ROUTES.CONTACT} render={props => <Contact />} />
           </Switch>

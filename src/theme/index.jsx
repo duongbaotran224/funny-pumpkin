@@ -7,6 +7,7 @@ const colors = {
   PRIMARY_COLOR: "#005CDD",
   SECONDARY_COLOR: "#6D59F0",
   WHITE: "#fff",
+  BLACK: "#333",
 };
 
 
