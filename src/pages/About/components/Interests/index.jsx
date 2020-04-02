@@ -38,7 +38,7 @@ const Interests = () => {
     <S.Section>
       <S.Flex>
         <Fade fraction={0.5} bottom>
-          <S.Title>{data.favorites.title}</S.Title>
+          <S.Title>{data.interests.title}</S.Title>
         </Fade>
         <Fade delay={500}>
           <Carousel defaultWait={8000}>
