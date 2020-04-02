@@ -1,18 +1,10 @@
 import React from 'react'
 import * as S from './styled';
 import makeCarousel from 'react-reveal/makeCarousel';
-import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
-import { ReactComponent as Arrow } from './arrow_left.svg'
-import { ReactComponent as Painting } from './painting.svg'
-import { ReactComponent as Coffee } from './coffee.svg'
-import { ReactComponent as Sewing } from './sewing.svg'
+import { Fade, Slide } from 'react-reveal';
+import { Arrow, Painting, Coffee, Sewing } from '../../svgs'
+import data from '../../data'
 
-const temp = [
-  { id: 'painting', text: 'painting' },
-  { id: 'coffee', text: 'coffee' },
-  { id: 'sewing', text: 'sewing' },
-]
 const icons = [
   { id: 'painting', icon: Painting },
   { id: 'coffee', icon: Coffee },
@@ -46,12 +38,12 @@ const Interests = () => {
     <S.Section>
       <S.Flex>
         <Fade fraction={0.5} bottom>
-          <S.Title>Some of my favorite things</S.Title>
+          <S.Title>{data.favorites.title}</S.Title>
         </Fade>
         <Fade delay={500}>
           <Carousel defaultWait={8000}>
             {
-              temp.map((item, index) => {
+              data.favorites.list.map((item, index) => {
                 const findIcon = icons.find(icon => icon.id === item.id)
                 const icon = findIcon ? findIcon.icon : icons[0].icon
 

@@ -1,9 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import * as S from './styled';
 import mockData from '../../data'
-import { ReactComponent as Avatar } from '../../svgs/test3.svg'
+import { ReactComponent as Avatar } from '../../svgs/avatar.svg'
 
 const Myname = () => {
   return (

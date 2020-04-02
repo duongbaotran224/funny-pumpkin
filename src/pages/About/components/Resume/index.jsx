@@ -8,9 +8,7 @@ const Resume = () => {
     <S.Section>
       <S.Flex>
         <Fade delay={500} bottom cascade>
-          <S.Title>
-            I look forward to hearing from you. <br /> Thanks for stopping by
-          </S.Title>
+          <S.Title>{mockData.resume.title}</S.Title>
           <S.Button>Resume</S.Button>
         </Fade>
       </S.Flex>

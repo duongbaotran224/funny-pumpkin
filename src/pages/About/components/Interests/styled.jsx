@@ -12,11 +12,7 @@ const move = keyframes`
   }
 `
 
-export const Section = styled.div`
-  // ${({ theme }) => theme.media.mob`
-  //   min-height: calc(100vh - 100rem)
-  // `};
-`;
+export const Section = styled.div``;
 
 export const Flex = styled.div`
   display: flex;
@@ -95,11 +91,9 @@ export const Text = styled.p`
 export const Button = styled.button`
   width: 40rem;
   height: 40rem;
-  background: transparent;
-  z-index: 100;
   position: absolute;
   bottom: 0;
-  user-select: none;
+  z-index: 100;
   ${props => props.right ? css`left: 55%;` : css`left:35%;`}
   ${props => props.right ? css`transform: rotate(180deg)` : css`transform: none;`}
 `;

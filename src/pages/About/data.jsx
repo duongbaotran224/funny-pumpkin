@@ -25,5 +25,16 @@ export default {
       { id: 'firebase', text: 'firebase', color: '#f8c032' },
       { id: 'react-spring', text: 'react-spring', color: '#ed696b' },
     ]
+  },
+  resume: {
+    title: `I look forward to hearing from you. \nThanks for stopping by`
+  },
+  favorites: {
+    title: 'Some of my favorite things',
+    list: [
+      { id: 'painting', text: 'painting' },
+      { id: 'coffee', text: 'coffee' },
+      { id: 'sewing', text: 'sewing' },
+    ]
   }
 } 

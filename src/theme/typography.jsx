@@ -38,8 +38,16 @@ const BUTTON = css`
   text-transform: uppercase;
 `
 
+const CAPTION = css`
+  ${baseStyle};
+  font-weight: 400;
+  font-size: 12rem;
+  line-height: ${20 / 12};
+  letter-spacing: 0.3em;
+`
+
 const typography = {
-  H1, H2, BODY, BUTTON
+  H1, H2, BODY, BUTTON, CAPTION
 }
 
 export default typography

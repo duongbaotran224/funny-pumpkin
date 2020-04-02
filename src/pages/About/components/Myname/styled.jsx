@@ -1,7 +1,4 @@
-import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import withReveal from 'react-reveal/withReveal'
-import Fade from 'react-reveal/Fade';
 
 const move = keyframes`
   0% {
@@ -45,7 +42,6 @@ export const Title = styled.h1`
   margin-bottom: 20rem;
 `;
 
-
 export const Desc = styled.p`
   ${({ theme }) => theme.typography.BODY};
   color: ${({ theme }) => theme.colors.TEXT_COLOR};
@@ -69,7 +65,6 @@ export const Avatar = styled.svg`
   `};
 `;
 
-
 export const Line = styled.div`
   position: relative;
   height: 100rem;
@@ -91,7 +86,6 @@ export const Line = styled.div`
 	  animation: ${move} 1.5s infinite linear 
   }
 `;
-
 
 export const WrapLine = styled.div`
   position: absolute;

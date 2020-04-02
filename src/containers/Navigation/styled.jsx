@@ -23,11 +23,7 @@ export const NavTop = styled.div`
 
 export const NavBot = styled(NavTop)``;
 
-export const Link = styled.a`
-  color: #010101;
-  margin-bottom: 1.5rem; 
-}
-`;
+export const Link = styled.a``;
 
 export const Icon = styled.svg`
   width: ${props => (props.size && `${props.size}rem`)
@@ -40,8 +36,14 @@ export const Icon = styled.svg`
   };
 `;
 
-export const ButtonIcon = styled.button`
-  background-color: transparent;
+export const Button = styled.button`
   transition: all 0.6s ease;
   ${props => props.down && css`transform: rotate(180deg)`};
+`;
+
+export const Text = styled.div`
+  ${({ theme }) => theme.typography.CAPTION};
+  color: ${({ theme }) => theme.colors.TEXT_COLOR};
+  transform: rotate(-90deg);
+  transform-origin: left
 `;

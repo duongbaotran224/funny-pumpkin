@@ -13,7 +13,7 @@ class ButtonScrollTop extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: true,
+      down: true,
     }
   }
 
@@ -27,7 +27,7 @@ class ButtonScrollTop extends Component {
 
   handleScroll = () => {
     this.setState({
-      show: document.body.getBoundingClientRect().top > window.innerHeight / -3
+      down: document.body.getBoundingClientRect().top > window.innerHeight / -3
     })
   }
 
@@ -37,34 +37,31 @@ class ButtonScrollTop extends Component {
 
   render() {
     return (
-      <S.ButtonIcon down={this.state.show} onClick={this.scrollTop}>
+      <S.Button down={this.state.down} onClick={this.scrollTop}>
         <S.Icon as={ScrollTop} size={24} />
-      </S.ButtonIcon>
+      </S.Button>
     )
 
   }
 }
 
 
-export default class Navigation extends Component {
+const Navigation = () => {
+  return (
+    <S.Navibar>
+      <S.NavTop>
+        <S.Link as={Link} to={ROUTES.ABOUT}>
+          <S.Icon as={Logo} w={35} h={40} />
+        </S.Link>
+        <Menu />
+      </S.NavTop>
 
-  render() {
-    return (
-      <S.Navibar>
-        <S.NavTop>
-          <S.Link as={Link} to={ROUTES.ABOUT}>
-            <S.Icon as={Logo} w={35} h={40} />
-          </S.Link>
-          <Menu />
-        </S.NavTop>
+      <S.NavBot>
+        <S.Text>@baotran</S.Text>
+        <ButtonScrollTop />
+      </S.NavBot>
 
-        <S.NavBot>
-          <div>@baotran</div>
-          <ButtonScrollTop />
-        </S.NavBot>
-
-      </S.Navibar>
-    )
-  }
+    </S.Navibar>
+  )
 }
-
+export default Navigation

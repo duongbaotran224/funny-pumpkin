@@ -1,16 +1,18 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
-export const Section = styled.div`
-  // ${({ theme }) => theme.media.mob`
-  //   min-height: calc(100vh - 100rem)
-  // `};
-`;
+export const Section = styled.div``;
 
 export const Flex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
+  width: 70%;
+  margin: auto;
+
+  ${({ theme }) => theme.media.mob`
+    width: 100%;
+  `};
 `;
 
 export const Title = styled.h2`
@@ -24,20 +26,18 @@ export const Title = styled.h2`
 `;
 
 export const Button = styled.button`
+  ${({ theme }) => theme.typography.BUTTON};
+  color:  ${({ theme }) => theme.colors.WHITE};
+  text-transform: lowercase;
   width: 120rem;
   min-height: 20px;
-
-  ${({ theme }) => theme.typography.BUTTON};
-  text-transform: lowercase;
+  background: ${({ theme }) => theme.colors.TEXT_COLOR};
+  border: 1px solid ${({ theme }) => theme.colors.TEXT_COLOR};
+  padding: 4rem 20rem 6rem 20rem ;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  color:  ${({ theme }) => theme.colors.WHITE};
-  background: ${({ theme }) => theme.colors.TEXT_COLOR};
-  border: 1px solid ${({ theme }) => theme.colors.TEXT_COLOR};
-  padding: 4rem 20rem 6rem 20rem ;
   transition: all 0.3s ease;
  
   &:hover {

@@ -1,11 +1,4 @@
 import styled, { css, keyframes } from 'styled-components'
-import mockData from '../../data'
-import _ from "lodash"
-
-// const random = (arr) => {
-//   console.log(_.shuffle(arr))
-// }
-// random(mockData["skills"]["list"])
 
 const translate = keyframes`
   0% {
@@ -71,9 +64,7 @@ export const Desc = styled.p`
   `};
 `;
 
-export const Section = styled.div`
- 
-`;
+export const Section = styled.div``;
 
 export const Flex = styled.div`
   display: flex;

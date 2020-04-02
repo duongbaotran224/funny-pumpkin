@@ -44,8 +44,8 @@ export default class Menu extends Component {
         {this.state.open &&
           <S.List>
             {
-              links.map((item) => (
-                <Item onClick={this.toggleMenu} {...item} />
+              links.map((item, index) => (
+                <Item key={index} onClick={this.toggleMenu} {...item} />
               ))
             }
           </S.List>
