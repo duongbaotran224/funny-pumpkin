@@ -1,8 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade';
 import * as S from './styled';
-import mockData from '../../data'
-import { ReactComponent as Avatar } from '../../svgs/avatar.svg'
+import data from '../../data'
+import { Avatar } from '../../svgs'
 
 const Myname = () => {
   return (
@@ -13,8 +13,8 @@ const Myname = () => {
         </Fade>
         <Fade delay={500} bottom cascade>
           <div>
-            <S.Title>{mockData.title}</S.Title>
-            <S.Desc>{mockData.description}</S.Desc>
+            <S.Title>{data.title}</S.Title>
+            <S.Desc>{data.description}</S.Desc>
           </div>
         </Fade>
       </S.Flex>

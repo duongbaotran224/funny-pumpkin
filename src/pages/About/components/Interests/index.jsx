@@ -43,7 +43,7 @@ const Interests = () => {
         <Fade delay={500}>
           <Carousel defaultWait={8000}>
             {
-              data.favorites.list.map((item, index) => {
+              data.interests.list.map((item, index) => {
                 const findIcon = icons.find(icon => icon.id === item.id)
                 const icon = findIcon ? findIcon.icon : icons[0].icon
 

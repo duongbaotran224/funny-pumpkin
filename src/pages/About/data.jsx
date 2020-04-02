@@ -29,7 +29,7 @@ export default {
   resume: {
     title: `I look forward to hearing from you. \nThanks for stopping by`
   },
-  favorites: {
+  interests: {
     title: 'Some of my favorite things',
     list: [
       { id: 'painting', text: 'painting' },

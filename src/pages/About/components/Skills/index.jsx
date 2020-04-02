@@ -35,7 +35,7 @@ const Skills = () => {
           <S.Line />
         </Fade>
       </S.WrapLine>
-    </S.Section >
+    </S.Section>
   )
 }
 

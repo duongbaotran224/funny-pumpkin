@@ -11,7 +11,7 @@ const About = () => {
       <Skills />
       <Interests />
       <Resume />
-    </S.Container >
+    </S.Container>
   )
 }
 export default About
