@@ -1,6 +1,5 @@
 import styled, { css, keyframes } from 'styled-components'
 
-
 const phone_anim = keyframes`
   0% {
     transform: rotate(0deg)
@@ -28,17 +27,17 @@ const phone_anim = keyframes`
 const address_anim = keyframes`
   0% {
     -webkit-transform:rotate(0) scale(.5) skew(1deg);
-            transform:rotate(0) scale(.5) skew(1deg);
+    transform:rotate(0) scale(.5) skew(1deg);
   }
 
   50% {
     -webkit-transform:rotate(0) scale(1) skew(1deg);
-            transform:rotate(0) scale(1) skew(1deg);
+    transform:rotate(0) scale(1) skew(1deg);
   }
 
   100% {
     -webkit-transform:rotate(0) scale(1) skew(1deg);
-            transform:rotate(0) scale(1) skew(1deg);
+    transform:rotate(0) scale(1) skew(1deg);
   }
 `
 
@@ -87,6 +86,4 @@ export const List = styled.div`
 `
 export const Flex = styled.div`
   display: flex;
-
-  
 `

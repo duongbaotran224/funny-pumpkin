@@ -1,29 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Fade from 'react-reveal/Fade';
-import { Info, Form } from './components';
 import * as S from './styled';
-import { ReactComponent as Hr } from './icons/hr.svg'
+import { Info, Form } from './components';
+import { Hr } from './svgs'
+import data from './data'
 
 
-export default class Contact extends Component {
-  // componentDidMount() {
-  //   window.scrollTo(0, 0);
-  // }
-
-  render() {
-    return (
-      <S.Container>
-        <Fade bottom>
-          <S.Title>LET’S TALK</S.Title>
-        </Fade>
-        <S.Flex>
-          <Info></Info>
-          <S.Line as={Hr} />
-          <Form></Form>
-        </S.Flex>
-      </S.Container>
-    )
-  }
+const Contact = () => {
+  return (
+    <S.Container>
+      <Fade bottom>
+        <S.Title>{data.title}</S.Title>
+      </Fade>
+      <S.Flex>
+        <Info></Info>
+        <S.Line as={Hr} />
+        <Form></Form>
+      </S.Flex>
+    </S.Container>
+  )
 }
-
+export default Contact
 

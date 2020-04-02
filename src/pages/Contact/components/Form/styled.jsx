@@ -95,10 +95,10 @@ export const Button = styled.button`
     cursor: not-allowed;
   }
  
-  // &:hover {
-    // color:  ${({ theme }) => theme.colors.TEXT_COLOR};
-    // background:  ${({ theme }) => theme.colors.BACKGROUND_COLOR};
-  // }
+  &:hover {
+    color:  ${({ theme }) => theme.colors.TEXT_COLOR};
+    background:  ${({ theme }) => theme.colors.BACKGROUND_COLOR};
+  }
 
   
 

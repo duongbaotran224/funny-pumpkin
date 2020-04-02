@@ -16,7 +16,6 @@ export default class ContactForm extends Component {
   }
 
   onSubmit = (event) => {
-    const { name, email, message } = this.state;
 
     this.setState({ button_state: "sending" })
 
