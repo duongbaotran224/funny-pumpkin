@@ -34,7 +34,7 @@ export const Title = styled.h2`
 export const WrapLine = styled.div`
   position: absolute;
   height: 100rem;
-  tranform-origin:50% 50%;
+  transform-origin:50% 50%;
   width: 1px;
   left: 50%;
   top: 100%;
@@ -44,7 +44,7 @@ export const Line = styled.div`
   position: relative;
   height: 100rem;
   background: #efefef;
-  tranform-origin:50% 50%;
+  transform-origin:50% 50%;
   width: 1px;
   left: 50%;
   top: 100%;

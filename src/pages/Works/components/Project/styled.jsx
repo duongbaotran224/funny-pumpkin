@@ -5,19 +5,23 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.TEXT_COLOR};
   position: absolute;
   top: 50rem; 
-  width: 120rem;
-  right: 0
+  width: 100rem;
+  right: 0;
 `
 export const Image = styled.img`
+  object-fit: contain;
   width: 300rem;
   height: 100%;
+  background: whitesmoke;
+  padding: 50rem;
+  transition: all 0.5s ease;
 
   @media(max-width: 600px) {
     width: 250rem;
   } 
 `
 
-export const Card = styled.div`
+export const Card = styled.a`
   position: relative;
   width: 350rem;
   height: 400rem;
@@ -40,6 +44,12 @@ export const Card = styled.div`
     width: 300rem;
     height: 200rem;
   };
+
+  &:hover {
+    ${Image} {
+      transform: translateY(-10px) ;
+    }
+  }
 
 `
 

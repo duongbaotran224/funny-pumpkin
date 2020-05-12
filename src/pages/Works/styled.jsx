@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 0 auto;
-  width: 800rem;
+  max-width: 800rem;
   padding: 100rem 0 ;
 
   ${({ theme }) => theme.media.mob`

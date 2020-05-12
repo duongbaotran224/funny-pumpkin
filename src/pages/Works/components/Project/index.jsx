@@ -5,12 +5,10 @@ import * as S from './styled';
 const Project = ({ index, data }) => {
   return (
     <Fade bottom cascade>
-      <S.Card index={index}>
-        <S.Image />
+      <S.Card index={index} href={data.link} target="_blank">
+        <S.Image src={data.image} />
         <S.Title>
-          <Fade top cascade>
-            {data.title}
-          </Fade>
+          {data.title}
         </S.Title>
       </S.Card>
     </Fade >

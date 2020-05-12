@@ -6,23 +6,33 @@ export default {
   description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
   list: [
     {
-      "title": "Menu Animation",
-      "image": "",
+      "id": "WNQNBdZ",
+      "link": "https://codepen.io/duongbaotran224/pen/WNQNBdZ",
+      "title": "Landing Page",
+      "image": "https://codepen.io/duongbaotran224/pen/WNQNBdZ/image/small.png",
+      "date": "2020"
+    },
+    {
+      "id": "QWjLvvr",
+      "link": "https://codepen.io/duongbaotran224/pen/QWjLvvr",
+      "title": "Tribute Page",
+      "image": "https://codepen.io/duongbaotran224/pen/QWjLvvr/image/large.png",
+      "date": "2020"
+    },
+    {
+      "id": "MWaYrWw",
+      "link": "https://codepen.io/duongbaotran224/pen/MWaYrWw",
+      "title": "Technical \n Documentation",
+      "image": "https://codepen.io/duongbaotran224/pen/MWaYrWw/image/small.png",
       "date": "2019"
     },
     {
-      "title": "Menu Animation",
-      "image": "",
-      "date": "2019"
+      "id": "LYpYpmj",
+      "link": "https://codepen.io/duongbaotran224/pen/LYpYpmj",
+      "title": "Survey \n Form",
+      "image": "https://codepen.io/duongbaotran224/pen/LYpYpmj/image/small.png",
+      "date": "2020"
     },
-    {
-      "title": "Menu Animation",
-      "image": "",
-      "date": "2019"
-    }, {
-      "title": "Menu Animation",
-      "image": "",
-      "date": "2019"
-    },
+
   ]
 }
