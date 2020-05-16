@@ -12,7 +12,7 @@ const move = keyframes`
   }
 `
 
-export const Section = styled.div``;
+export const Section = styled.section``;
 
 export const Flex = styled.div`
   display: flex;

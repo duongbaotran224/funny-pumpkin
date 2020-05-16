@@ -12,11 +12,11 @@ const move = keyframes`
   }
 `
 
-export const Section = styled.div`
+export const Section = styled.section`
   position: relative; 
 
   ${({ theme }) => theme.media.mob`
-    height: calc(100vh - 150rem)
+    height: calc(99vh - 150rem)
   `};
 `;
 

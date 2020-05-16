@@ -33,7 +33,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <StyledGlobal />
-        {/* <ScrollTopRouter /> */}
+        <ScrollTopRouter />
         <Switch >
           <Route exact path={ROUTES.ABOUT} render={props => <About />} />
           <Route path={ROUTES.WORKS} render={props => <Works />} />
