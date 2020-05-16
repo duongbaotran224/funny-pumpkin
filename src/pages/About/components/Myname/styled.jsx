@@ -40,6 +40,9 @@ export const Title = styled.h1`
   ${({ theme }) => theme.typography.H1};
   color: ${({ theme }) => theme.colors.TEXT_COLOR};
   margin-bottom: 20rem;
+  ${({ theme }) => theme.media.mob`
+    text-align: center;
+  `};
 `;
 
 export const Desc = styled.p`
@@ -50,7 +53,8 @@ export const Desc = styled.p`
   margin-bottom: 30rem;
     
   ${({ theme }) => theme.media.mob`
-    width: 100%
+    width: 100%;
+    text-align: center;
   `};
 `;
 
