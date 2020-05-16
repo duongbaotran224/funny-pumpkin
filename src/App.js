@@ -9,7 +9,7 @@ import theme from './theme';
 
 /*router*/
 import * as ROUTES from './constants/routes';
-import Navigation from './containers/Navigation';
+import { Navigation } from './components';
 import Contact from './pages/Contact';
 import Works from './pages/Works';
 import About from './pages/About';
@@ -33,7 +33,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Router>
         <StyledGlobal />
-        <ScrollTopRouter />
+        {/* <ScrollTopRouter /> */}
         <Switch >
           <Route exact path={ROUTES.ABOUT} render={props => <About />} />
           <Route path={ROUTES.WORKS} render={props => <Works />} />
