@@ -56,12 +56,13 @@ export const Desc = styled.p`
 
 export const Avatar = styled.svg`
   width: 320rem;
-  height: auto;
+  height: 320rem;
   margin-right: 50rem;
   margin-bottom: 30rem;
 
   ${({ theme }) => theme.media.mob`
     width: 200rem;
+    height: 200rem;
     margin-right: auto;
   `};
 `;
