@@ -17,7 +17,7 @@ const Skills = () => {
     <S.Section>
       <Fade delay={500} bottom>
         <S.Title>{data["skills"].title}</S.Title>
-        <S.Desc>{data["skills"].description}</S.Desc>
+        {/* <S.Desc>{data["skills"].description}</S.Desc> */}
       </Fade>
       <Zoom duration={2000}>
         <S.List>

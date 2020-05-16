@@ -48,8 +48,9 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.TEXT_COLOR};
   font-size: 30rem;
   font-weight: 700;
-  margin-bottom: 20rem;
+  margin-bottom: 30rem;
   text-transform: none;
+  text-align: center;
 `;
 
 export const Desc = styled.p`

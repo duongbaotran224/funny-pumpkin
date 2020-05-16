@@ -4,6 +4,7 @@ export const Line = styled.div`
   width: 100%;
   height: 2px;
   margin: 2px 0;
+  overflow: hidden;
 `;
 
 export const LineTop = styled(Line)`
@@ -62,13 +63,19 @@ export const Burger = styled.button`
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 200rem;
   flex-direction: column;
   align-items: flex-end;
 `;
 
 export const List = styled(Wrapper)`
   margin-top: 30rem;
+  pointerEvents: none;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s cubic-bezier(.23,1,.32,1);
+  ${props => props.isOpen && css`opacity: 1`};
+  background: ${({ theme }) => theme.colors.WHITE};
+  padding: 10rem 0 10rem 10rem;
 `;
 
 
@@ -77,7 +84,6 @@ export const NavItem = styled.a`
   color: ${({ theme }) => theme.colors.TEXT_COLOR};
   text-transform: capitalize;
   margin-bottom: 18rem;
-  
   position: relative;
 
   ::before{
@@ -96,6 +102,12 @@ export const NavItem = styled.a`
   &:hover::before {
     transform: scaleX(1);
     transform-origin: left;
-  }
+  };
+  
+  transform: translate3d(100%,0,0);
+  opacity: 0;
+  transition-delay: ${({ index }) => css`${(index + 1) * 0.3}s`};
+  transition: 1s cubic-bezier(.23,1,.32,1);
+  ${props => props.isOpen && css`transform: translate3d(0,0,0); opacity: 1`};
   
 `

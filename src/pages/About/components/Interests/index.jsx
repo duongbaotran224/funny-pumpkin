@@ -2,12 +2,13 @@ import React from 'react'
 import * as S from './styled';
 import makeCarousel from 'react-reveal/makeCarousel';
 import { Fade, Slide } from 'react-reveal';
-import { Arrow, Painting, Coffee, Sewing } from '../../svgs'
+import { Arrow, Painting, Coffee, Sewing, Travelling } from '../../svgs'
 import data from '../../data'
 
 const icons = [
-  { id: 'painting', icon: Painting },
   { id: 'coffee', icon: Coffee },
+  { id: 'travelling', icon: Travelling },
+  { id: 'painting', icon: Painting },
   { id: 'sewing', icon: Sewing },
 ]
 

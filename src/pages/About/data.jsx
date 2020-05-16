@@ -1,9 +1,6 @@
-// import uuid from 'uuid/v1';
-// import moment from 'moment';
-
 export default {
   title: "Hi, I am Pumpkin.",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et odio mi. Aenean quis tristique purus. Aenean efficitur, dui vitae commodo pretium, diam sapien blandit orci, eget tempus augue augue at quam.",
+  description: `A front-end web developer based  in Vietnam. \n A girl who really loves life … a lot`,
   skills: {
     title: "Skills",
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et odio mi',
@@ -32,8 +29,9 @@ export default {
   interests: {
     title: 'Some of my favorite things',
     list: [
-      { id: 'painting', text: 'painting' },
       { id: 'coffee', text: 'coffee' },
+      { id: 'travelling', text: "travelling" },
+      { id: 'painting', text: 'painting' },
       { id: 'sewing', text: 'sewing' },
     ]
   }

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const links = [
   { href: ROUTES.ABOUT, title: "About" },
-  { href: ROUTES.WORKS, title: "Works" },
+  { href: ROUTES.WORKS, title: "Experiments" },
   { href: ROUTES.CONTACT, title: "Contact" },
 ]
 
@@ -20,9 +20,9 @@ const Burger = ({ onClick, isOpen }) => {
   )
 }
 
-const Item = ({ onClick, href, title }) => {
+const Item = ({ onClick, href, title, index, isOpen }) => {
   return (
-    <S.NavItem onClick={onClick} as={NavLink} to={href}>{title}</S.NavItem>
+    <S.NavItem onClick={onClick} as={NavLink} to={href} index={index} isOpen={isOpen}>{title}</S.NavItem>
   )
 }
 
@@ -40,16 +40,18 @@ export default class Menu extends Component {
     return (
       <S.Wrapper>
         <Burger onClick={this.toggleMenu} isOpen={this.state.open} />
-
-        {this.state.open &&
-          <S.List>
-            {
-              links.map((item, index) => (
-                <Item key={index} onClick={this.toggleMenu} {...item} />
-              ))
-            }
-          </S.List>
-        }
+        <S.List isOpen={this.state.open}>
+          {
+            links.map((item, index) => (
+              <Item key={item.title}
+                index={index}
+                isOpen={this.state.open}
+                onClick={this.toggleMenu}
+                {...item}
+              />
+            ))
+          }
+        </S.List>
       </S.Wrapper>
     )
   }

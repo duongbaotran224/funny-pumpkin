@@ -25,7 +25,7 @@ export const Title = styled.h2`
   text-transform: none;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   ${({ theme }) => theme.typography.BUTTON};
   color:  ${({ theme }) => theme.colors.WHITE};
   text-transform: lowercase;

@@ -45,9 +45,8 @@ export const Title = styled.h1`
 export const Desc = styled.p`
   ${({ theme }) => theme.typography.BODY};
   color: ${({ theme }) => theme.colors.TEXT_COLOR};
-  
+  font-size: 18rem;
   text-align: justify;
-  width: 350rem;
   margin-bottom: 30rem;
     
   ${({ theme }) => theme.media.mob`
@@ -58,10 +57,12 @@ export const Desc = styled.p`
 export const Avatar = styled.svg`
   width: 320rem;
   height: auto;
+  margin-right: 50rem;
   margin-bottom: 30rem;
 
   ${({ theme }) => theme.media.mob`
     width: 200rem;
+    margin-right: auto;
   `};
 `;
 
@@ -75,7 +76,7 @@ export const Line = styled.div`
   top: 100%;
   overflow: hidden;
 
-  ::after{
+  ::before{
     position: absolute;
     top: 0;
     left: 0;

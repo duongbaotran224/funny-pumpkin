@@ -86,7 +86,8 @@ export const Text = styled.p`
   font-weight: 600;
   letter-spacing: 0.2em;
   margin-left: 12rem;
-`
+  margin-top: 10rem;
+`;
 
 export const Button = styled.button`
   width: 40rem;
@@ -94,6 +95,11 @@ export const Button = styled.button`
   position: absolute;
   bottom: 0;
   z-index: 100;
-  ${props => props.right ? css`left: 55%;` : css`left:35%;`}
-  ${props => props.right ? css`transform: rotate(180deg)` : css`transform: none;`}
+  transition: all 0.3s ease;
+  ${props => props.right ? css`left: 55%;` : css`left:35%;`};
+  ${props => props.right ? css`transform: rotate(180deg)` : css`transform: none;`};
+
+  &:hover {
+    opacity: 0.3
+  }
 `;

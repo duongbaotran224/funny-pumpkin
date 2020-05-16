@@ -11,7 +11,7 @@ export const Navibar = styled.nav`
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 25rem 50rem;
+  padding: 25rem 40rem;
 `;
 
 export const NavTop = styled.div`
@@ -38,7 +38,7 @@ export const Icon = styled.svg`
 
 export const Button = styled.button`
   transition: all 0.6s ease;
-  ${props => props.down && css`transform: rotate(180deg)`};
+  ${props => props.down && css`transform: rotate(180deg); cursor: auto`};
 `;
 
 export const Text = styled.div`

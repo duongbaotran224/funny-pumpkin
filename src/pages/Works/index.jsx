@@ -11,8 +11,8 @@ const WorksPage = () => {
     <S.Container>
       <Fade cascade bottom>
         <div>
-          <S.Title>{data.title}</S.Title>
-          <S.Desc>{data.description}</S.Desc>
+          {/* <S.Title>{data.title}</S.Title> */}
+          {/* <S.Desc>{data.description}</S.Desc> */}
           <S.GridList cols={2} gap={100}>
             {
               data.list.map((item, index) => {
