@@ -13,6 +13,34 @@ export default {
       "date": "2020"
     },
     {
+      "id": "vl3jl",
+      "link": "https://vl3jl.csb.app/",
+      "title": "DataTable",
+      "image": "https://codesandbox.io/api/v1/sandboxes/vl3jl/screenshot.png",
+      "date": "2020"
+    },
+    {
+      "id": "079ts",
+      "link": "https://079ts.csb.app/",
+      "title": "Graphing with Chart.js",
+      "image": "https://codesandbox.io/api/v1/sandboxes/079ts/screenshot.png",
+      "date": "2020"
+    },  
+    {
+      "id": "mdemPxy",
+      "link": "https://codepen.io/duongbaotran224/pen/mdemPxy",
+      "title": "Random Quote Machine",
+      "image": "https://codepen.io/duongbaotran224/pen/mdemPxy/image/large.png",
+      "date": "2020"
+    },
+    {
+      "id": "qe94f",
+      "link": "https://qe94f.csb.app",
+      "title": "Simple CRUD - Pure Javascript",
+      "image": "https://codesandbox.io/api/v1/sandboxes/qe94f/screenshot.png",
+      "date": "2020"
+    },
+    {
       "id": "QWjLvvr",
       "link": "https://codepen.io/duongbaotran224/pen/QWjLvvr",
       "title": "Tribute Page",
@@ -26,21 +54,6 @@ export default {
       "image": "https://codepen.io/duongbaotran224/pen/LYpYpmj/image/large.png",
       "date": "2020"
     },
-    {
-      "id": "mdemPxy",
-      "link": "https://codepen.io/duongbaotran224/pen/mdemPxy",
-      "title": "Random Quote Machine",
-      "image": "https://codepen.io/duongbaotran224/pen/mdemPxy/image/large.png",
-      "date": "2020"
-    },
-    // {
-    //   "id": "MWaYrWw",
-    //   "link": "https://codepen.io/duongbaotran224/pen/MWaYrWw",
-    //   "title": "Technical \n Documentation",
-    //   "image": "https://codepen.io/duongbaotran224/pen/MWaYrWw/image/small.png",
-    //   "date": "2020"
-    // },
-
-
+       
   ]
 }

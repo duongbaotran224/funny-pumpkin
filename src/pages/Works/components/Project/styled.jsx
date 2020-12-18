@@ -37,7 +37,8 @@ export const Card = styled.a`
     }`
   };
 
-  ${props => props.index % 3 === 0 && 'height: 200rem'};
+  ${props => ((props.index % 4 === 0 || props.index % 4 === 3) && 'height: 200rem; margin: 50rem 0'
+  )};
 
 
   @media(max-width: 600px) {
